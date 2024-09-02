@@ -7,7 +7,7 @@ const HeroSection = () => {
             <div className="grid grid-cols-1 lg:grid-cols-12">
                 <div className="col-span-7 place-self-center">
                     <h1 className="text-white mb-4 text-4xl lg:text-6xl font-extrabold">
-                        Hello, I'm CJ.
+                        Hello, I am CJ.
                     </h1>
                     <p className="text-[#c0c0c0] text-lg lg:text-xl">
                         I am a recent Computer Science graduate from Kettering University with over 2 years of tech industry experience in embedded programming, software testing, and systems design.
