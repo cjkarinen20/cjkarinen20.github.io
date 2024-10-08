@@ -29,8 +29,7 @@ const HeroSection = () => {
                         />
                     </h1>
                     <p className="text-[#c0c0c0] text-base sm:text-lg mb-6 lg:text-xl">
-                        I am a recent Computer Science graduate from Kettering University with over 3 years of industry experience in embedded programming, software testing, and systems design.
-                        Additionally, I have personal and academic experience in game design, level design, environmental modelling, and systems programming.
+                        Kettering University Computer Science Graduate
                     </p>
                     <div>
                         <button className="px-6 py-3 w-full sm:w-full rounded-full mr-4 bg-gradient-to-br from-yellow-500 via-orange-500 to-red-500 hover:bg-slate-200 text-black">Hire Me</button>
