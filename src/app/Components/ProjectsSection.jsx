@@ -4,12 +4,13 @@ import ProjectCard from './ProjectCard';
 import ProjectTag from './ProjectTag';
 
 
+
 const projectsData = [
     {
         id: 1,
         title: "Project 1",
         description: "This is a project description",
-        image: "/images/Placeholder1.JFIF",
+        image: "/images/Placeholder1.png",
         tags: ["All", "Web"],
         gitURL: "/",
         previewURL: "/",
@@ -74,33 +75,34 @@ const ProjectsSection = () => {
         setTag(newTag);
     };
 
-    const filteredProjects = projectsData.filter((project) => project.tags.includes(tag));
+    const filteredProjects = projectsData.filter((project) =>
+        project.tags.includes(tag)
+    );
 
     return (
-        <>
-            <h2>Projects</h2>
-            <div className="text-white flex flex-row justify-center items-center gap-w py-6">
+        <section id="projects">
+            <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+                Projects
+            </h2>
+            <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
                 <ProjectTag
                     onClick={handleTagChange}
                     tag="All"
                     isSelected={tag == "All"}
                 />
-            </div>
-            <div className="text-white flex flex-row justify-center items-center gap-w py-6">
                 <ProjectTag
                     onClick={handleTagChange}
                     tag="Games"
                     isSelected={tag == "Games"}
                 />
-            </div>
-            <div className="text-white flex flex-row justify-center items-center gap-w py-6">
                 <ProjectTag
                     onClick={handleTagChange}
                     tag="Software"
                     isSelected={tag == "Software"}
                 />
-            </div>
-            <div>{filteredProjects.map((project) =>
+            </div >
+            <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+                {filteredProjects.map((project) =>
                 <ProjectCard
                     key={project.id}
                     title={project.title}
@@ -112,7 +114,7 @@ const ProjectsSection = () => {
                 />
             )}
             </div>
-        </>
+        </section>
     );
 };
 

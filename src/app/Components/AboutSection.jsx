@@ -60,11 +60,11 @@ const AboutSection = () => {
     };
 
     return (
-        <section className="text-white">
+        <section className="text-white" id="about">
             <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-                <Image src="/images/Portrait_Chicago.jpg" width={500} height={500} alt="Portrait of me in Chicago" />
+                <Image src="/images/Portrait_Chicago.jpg" width={500} height={500} />
                 <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-                    <h2 className="tex-4xl font'bold text-white mb-4">About Me</h2>
+                    <h2 className="text-4xl font'bold text-white mb-4">About Me</h2>
                     <p className="text-base lg:text-lg">
                         I&#39;m a recent Kettering University graduate with a degree in Computer Science and a minor in business.
                         I&#39;m detail-oriented worker, a creative thinker, and experienced in managing small teams and projects.
@@ -73,15 +73,35 @@ const AboutSection = () => {
 
                     </p>
                     <div className="flex flex-row justify-start mt-8">
-                        <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}> {" "} Skills{" "} </TabButton>
-                        <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"}> {" "} Education{" "} </TabButton>
-                        <TabButton selectTab={() => handleTabChange("experience")} active={tab === "experience"}>{" "} Experience{" "} </TabButton>
+                        <TabButton selectTab={() =>
+                            handleTabChange("skills")}
+                            active={tab === "skills"}
+                        >
+                            {" "}
+                            Skills{" "}
+                        </TabButton>
+                        <TabButton selectTab={() =>
+                            handleTabChange("education")}
+                            active={tab === "education"}
+                        >
+                            {" "}
+                            Education{" "}
+                        </TabButton>
+                        <TabButton selectTab={() =>
+                            handleTabChange("experience")}
+                            active={tab === "experience"}
+                        >
+                            {" "}
+                            Experience{" "}
+                        </TabButton>
                     </div>
-                    <div className="mt-8">{TAB_DATA.find((t) => t.id === tab).content}</div>
+                    <div className="mt-8">
+                        {TAB_DATA.find((t) => t.id === tab).content}
+                    </div>
                 </div>
             </div>
         </section>
     );
-}
+};
 
 export default AboutSection;

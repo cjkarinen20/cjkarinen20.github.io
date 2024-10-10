@@ -1,16 +1,16 @@
 import React from 'react';
 
-const TabButton = ({active, selectTab, children}) => {
-const buttonClasses = active 
-    ? 'text-white border-b border-orange-500' 
-    : 'text-[#ADDDDD]';
+const TabButton = ({ active, selectTab, children }) => {
+    const buttonClasses = active
+        ? 'text-white border-b border-orange-500'
+        : 'text-[#ADDDDD]';
 
     return (
         <button onClick={selectTab}>
-            <p className={'mr-3 font-semibold hover:text-white ${buttonClasses}'}>
+            <p className={`mr-3 font-semibold hover:text-white ${buttonClasses}`}>
                 {children}
             </p>
-    </button>
+        </button>
     )
 }
 
