@@ -67,7 +67,7 @@ const AboutSection = () => {
                     <h2 className="tex-4xl font'bold text-white mb-4">About Me</h2>
                     <p className="text-base lg:text-lg">
                         I&#39;m a recent Kettering University graduate with a degree in Computer Science and a minor in business.
-                        I'm detail-oriented worker, a creative thinker, and experienced in managing small teams and projects.
+                        I&#39;m detail-oriented worker, a creative thinker, and experienced in managing small teams and projects.
                         I have over 3 years of industry experience in embedded programming, software testing, and systems design.
                         Additionally, I have personal and academic experience in game design, level design, environmental modelling, and systems programming.
 
