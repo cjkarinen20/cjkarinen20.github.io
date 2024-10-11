@@ -1,5 +1,5 @@
 "use client"
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Link from 'next/link';
@@ -42,11 +42,11 @@ const EmailSection = () => {
             <div>
                 <h5
                     className="text-xl font-bold text-white my-2 ">
-                    Let's Connect
+                    Let&#39;s Connect
                 </h5>
                 <p className="text-[#ADB7BE] mb-4 max-w-md">
                     {" "}
-                    I'm always open to new opportunities and collaborations.
+                    I&#39;m always open to new opportunities and collaborations.
                     Feel free to reach out to me for any queries.
                 </p>
                 <div className="socials flex flex-row gap-2">
@@ -114,7 +114,7 @@ const EmailSection = () => {
                                 Email sent successfully!
                             </p>
                         )
-                       
+
                     }
                 </form>
             </div>
