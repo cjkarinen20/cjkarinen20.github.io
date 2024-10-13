@@ -5,7 +5,7 @@ const Footer = () => {
         <footer className="footer border border-t-[#33353F] border-l-transparent border-r-transparent text-white z-10">
             <div className="container p-12 flex justify-between">
                 <span>
-                    LOGO
+                    CJ Karinen
                 </span>
                 <p className="text-slate-600">
                     All rights reserved.

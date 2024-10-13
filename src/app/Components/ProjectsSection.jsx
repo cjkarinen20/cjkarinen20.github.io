@@ -9,34 +9,35 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
     {
         id: 1,
-        title: "Project 1",
-        description: "This is a project description",
-        image: "/images/Placeholder1.png",
+        title: "Drop Dead",
+        description: "A cooperative 4-player zombie survival board game.",
+        image: "/images/DropDeadPreview.jpg",
         tags: ["All", "Games"],
-        gitURL: "/",
-        previewURL: "/",
+        gitURL: "/documents/DropDead_Rulebook.pdf",
+        previewURL: "/documents/DropDead_SellSheet.pdf",
 
     },
     {
         id: 2,
-        title: "Project 2",
-        description: "This is a project description",
-        image: "/images/Placeholder2.png",
+        title: "Whack-A-Bot VR",
+        description: "Scaled up version of the classic arcade game in VR.",
+        image: "/images/WABVR_Preview.png",
         tags: ["All", "Games"],
-        gitURL: "/",
-        previewURL: "/",
+        gitURL: "https://github.com/nocteardor/cs420-bk-vrgame",
+        previewURL: "/documents/WABVR_TechincalReport.pdf",
 
     },
     {
         id: 3,
-        title: "Project 3",
-        description: "This is a project description",
-        image: "/images/Placeholder3.jpg",
+        title: "Liminality",
+        description: "A liminal space inspired found footage horror game.",
+        image: "/images/LiminalityPreview.png",
         tags: ["All", "Games"],
-        gitURL: "/",
-        previewURL: "/",
+        gitURL: "https://github.com/cjkarinen20/LiminalityHDRP",
+        previewURL: "https://rattl3bones.itch.io/liminality",
 
     },
+    /*
     {
         id: 4,
         title: "Project 4",
@@ -67,6 +68,7 @@ const projectsData = [
         previewURL: "/",
 
     }
+    */
 ];
 
 const ProjectsSection = () => {
