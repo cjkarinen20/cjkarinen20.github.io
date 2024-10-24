@@ -9,16 +9,26 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
     {
         id: 1,
-        title: "Drop Dead",
-        description: "A cooperative 4-player zombie survival board game.",
-        image: "/images/DropDeadPreview.jpg",
+        title: "Voice Of The Valley",
+        description: "A narrative horror game developed for Itch.io ScreamJam 2024.",
+        image: "/images/VoiceOfTheValley.png",
         tags: ["All", "Games"],
-        gitURL: "/documents/DropDead_Rulebook.pdf",
-        previewURL: "/documents/DropDead_SellSheet.pdf",
+        gitURL: "https://github.com/cjkarinen20/ScreamJam2024",
+        previewURL: "https://austen-kinney.itch.io/voiceofthevalley",
 
     },
     {
         id: 2,
+        title: "Liminality",
+        description: "A liminal space inspired found footage horror game.",
+        image: "/images/LiminalityPreview.png",
+        tags: ["All", "Games"],
+        gitURL: "https://github.com/cjkarinen20/LiminalityHDRP",
+        previewURL: "https://rattl3bones.itch.io/liminality",
+
+    },
+    {
+        id: 3,
         title: "Whack-A-Bot VR",
         description: "Scaled up version of the classic arcade game in VR.",
         image: "/images/WABVR_Preview.png",
@@ -28,13 +38,13 @@ const projectsData = [
 
     },
     {
-        id: 3,
-        title: "Liminality",
-        description: "A liminal space inspired found footage horror game.",
-        image: "/images/LiminalityPreview.png",
+        id: 4,
+        title: "Drop Dead",
+        description: "A cooperative 4-player zombie survival board game.",
+        image: "/images/DropDeadPreview.jpg",
         tags: ["All", "Games"],
-        gitURL: "https://github.com/cjkarinen20/LiminalityHDRP",
-        previewURL: "https://rattl3bones.itch.io/liminality",
+        gitURL: "/documents/DropDead_Rulebook.pdf",
+        previewURL: "/documents/DropDead_SellSheet.pdf",
 
     },
     /*
