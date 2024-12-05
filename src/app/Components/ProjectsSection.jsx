@@ -47,17 +47,17 @@ const projectsData = [
         previewURL: "/documents/DropDead_SellSheet.pdf",
 
     },
-    /*
     {
-        id: 4,
-        title: "Project 4",
-        description: "This is a project description",
-        image: "/images/Placeholder4.jpg",
+        id: 5,
+        title: "C++ Raycaster Engine",
+        description: "A Wolfenstein-style game engine developed in C++ and OpenGL.",
+        image: "/images/Raycaster_Preview.png",
         tags: ["All", "Software"],
-        gitURL: "/",
+        gitURL: "https://github.com/cjkarinen20/CPP_Raycaster_Engine",
         previewURL: "/",
 
     },
+    /*
     {
         id: 5,
         title: "Project 5",
