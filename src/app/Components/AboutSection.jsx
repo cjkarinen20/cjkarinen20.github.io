@@ -5,8 +5,71 @@ import TabButton from "./TabButton";
 
 const TAB_DATA = [
     {
-        title: "Skills",
-        id: "skills",
+        title: "Coding Languages",
+        id: "codinglanguages",
+        content: (
+            <ul className="list-disc pl-2">
+                <li>Java</li>
+                <li>C,C++,C#</li>
+                <li>Javascript</li>
+                <li>Haskell</li>
+                <li>React</li>
+                <li>mySQL</li>
+                <li>Python</li>
+                <li>HTML/CSS</li>
+                <li>Unity</li>
+                <li>Unreal</li>
+                <li>Blender</li>
+                <li>Git</li>
+                <li>Agile</li>
+            </ul>
+        )
+    },
+    {
+        title: "Web/DB",
+        id: "webdb",
+        content: (
+            <ul className="list-disc pl-2">
+                <li>Java</li>
+                <li>C,C++,C#</li>
+                <li>Javascript</li>
+                <li>Haskell</li>
+                <li>React</li>
+                <li>mySQL</li>
+                <li>Python</li>
+                <li>HTML/CSS</li>
+                <li>Unity</li>
+                <li>Unreal</li>
+                <li>Blender</li>
+                <li>Git</li>
+                <li>Agile</li>
+            </ul>
+        )
+    },
+    {
+        title: "Game Dev",
+        id: "gamedev",
+        content: (
+            <ul className="list-disc pl-2">
+                <li>Java</li>
+                <li>C,C++,C#</li>
+                <li>Javascript</li>
+                <li>Haskell</li>
+                <li>React</li>
+                <li>mySQL</li>
+                <li>Python</li>
+                <li>HTML/CSS</li>
+                <li>Unity</li>
+                <li>Unreal</li>
+                <li>Blender</li>
+                <li>Git</li>
+                <li>Agile</li>
+            </ul>
+        )
+    },
+    {
+        title: "Engineering Skills",
+        id: "engineering",
         content: (
             <ul className="list-disc pl-2">
                 <li>Java</li>
@@ -50,7 +113,7 @@ const TAB_DATA = [
 
 
 const AboutSection = () => {
-    const [tab, setTab] = useState("skills");
+    const [tab, setTab] = useState("codinglanguages");
     const [isPending, startTransition] = useTransition();
 
     const handleTabChange = (id) => {
@@ -74,11 +137,32 @@ const AboutSection = () => {
                     </p>
                     <div className="flex flex-row justify-start mt-8">
                         <TabButton selectTab={() =>
-                            handleTabChange("skills")}
-                            active={tab === "skills"}
+                            handleTabChange("codinglanguages")}
+                            active={tab === "codinglanguages"}
                         >
                             {" "}
-                            Skills{" "}
+                            Coding Languages{" "}
+                        </TabButton>
+                        <TabButton selectTab={() =>
+                            handleTabChange("webdb")}
+                            active={tab === "webdb"}
+                        >
+                            {" "}
+                            Web/DB{" "}
+                        </TabButton>
+                        <TabButton selectTab={() =>
+                            handleTabChange("gamedev")}
+                            active={tab === "gamedev"}
+                        >
+                            {" "}
+                            Game Dev{" "}
+                        </TabButton>
+                        <TabButton selectTab={() =>
+                            handleTabChange("engineering")}
+                            active={tab === "engineering"}
+                        >
+                            {" "}
+                            Engineering Skills{" "}
                         </TabButton>
                         <TabButton selectTab={() =>
                             handleTabChange("education")}
