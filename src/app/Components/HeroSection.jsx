@@ -7,19 +7,13 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
     return (
-        <section className="lg:py-16" id="home">
-            <div className="grid grid-cols-1 sm:grid-cols-12 "
-            style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                height: '30vh',
-              }}>
+        <section className="lg:py-16 h-screen" id="home">
+            <div className="grid grid-cols-1 sm:grid-cols-12 h-full items-center">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5 }}
-                    className="col-span-8 place-self-center text-center sm:text-left">
+                    className="col-span-12 mx-auto text-center">
                     <h1 className="text-white mb-4 text-5xl sm:text-2xl lg:text-7xl lg:leading-normal font-extrabold">
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500">
                             Hello, I&#39;m{" "}
@@ -43,7 +37,7 @@ const HeroSection = () => {
                         />
                     </h1>
                     <p className="text-[#c0c0c0] text-base sm:text-lg mb-6 lg:text-xl">
-                        Kettering University Computer Science Graduate
+                        Kettering University Computer Science Alumni
                     </p>
                     <div>
                         <Link
