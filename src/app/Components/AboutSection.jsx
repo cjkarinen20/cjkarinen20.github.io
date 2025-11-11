@@ -85,8 +85,9 @@ const EducationContent = () => (
 );
 const experienceData = [
      {
-        title: "General Inspection - Software Validation Engineer",
+        title: "General Inspection - Software Test Engineer",
         duration: "May 2025 - Oct. 2025",
+        type: "Full-Time",
         bullets: [
             "Developed and maintained embedded C++ code for high-precision industrial inspection equipment.",
             "Designed and implemented automated software testing protocols, reducing bug report time by 40%.",
@@ -96,6 +97,7 @@ const experienceData = [
     {
         title: "General Inspection - Application Engineer",
         duration: "Feb. 2025 - May 2025",
+        type: "Full-Time",
         bullets: [
             "Developed and maintained embedded C++ code for high-precision industrial inspection equipment.",
             "Designed and implemented automated software testing protocols, reducing bug report time by 40%.",
@@ -105,6 +107,7 @@ const experienceData = [
     {
         title: "Inspectron Tools - Software Team Intern",
         duration: "April 2022 - June 2024",
+        type: "Internship",
         bullets: [
             "Developed and maintained embedded C++ code for high-precision industrial inspection equipment.",
             "Designed and implemented automated software testing protocols, reducing bug report time by 40%.",
@@ -114,6 +117,7 @@ const experienceData = [
     {
         title: "JMC Industries - Controls Team Intern",
         duration: "October - December 2021",
+        type: "Internship",
         bullets: [
             "Assisted in wiring and programming PLCs (Programmable Logic Controllers) for custom automation solutions.",
             "Created HMI (Human-Machine Interface) systems for facility controls.",
@@ -122,6 +126,7 @@ const experienceData = [
     {
         title: "Kettering University - IGVC Project",
         duration: "October - December 2020",
+        type: "Internship",
         bullets: [
             "Collaborated on a team to develop navigation software for an autonomous ground vehicle competition (IGVC).",
             "Programmed sensor fusion algorithms in Python for accurate pathfinding."
@@ -133,8 +138,18 @@ const ExperienceContent = () => (
     <div className="space-y-4">
         {experienceData.map((job, index) => (
             <details key={index} className="p-4 rounded-lg bg-[#181818] border border-gray-700 hover:border-yellow-500 transition-colors duration-300">
-                <summary className="font-semibold text-lg text-white cursor-pointer hover:text-yellow-500 transition-colors duration-300">
-                    {job.title} <span className="text-sm text-gray-400 ml-2">({job.duration})</span>
+                <summary className="font-semibold text-white cursor-pointer hover:text-yellow-500 transition-colors duration-300 flex justify-between items-center w-full pr-4">
+                    {/* Job Title */}
+                    <span className="flex-grow whitespace-nowrap overflow-hidden text-ellipsis">{job.title}</span> 
+                    
+                    {/* Duration */}
+                    <span className="text-xs text-gray-400 ml-4 flex-shrink-0 text-right">
+                        ({job.duration})
+                        <br className="sm:hidden" /> 
+                        <span className="inline-block sm:ml-2 font-medium text-yellow-300">
+                           {job.type}
+                        </span>
+                    </span>
                 </summary>
                 <ul className="list-disc pl-6 mt-3 text-gray-400 space-y-2">
                     {job.bullets.map((bullet, i) => (
@@ -149,22 +164,21 @@ const TAB_DATA = [
     {
         title: "Skills",
         id: "skills",
-        content: <SkillsContent />, // Using the new component
+        content: <SkillsContent />, 
     },
     {
         title: "Education",
         id: "education",
-        content: <EducationContent />, // Using the new component
+        content: <EducationContent />, 
     },
     {
         title: "Experience",
         id: "experience",
-        content: <ExperienceContent />, // Using the new component
+        content: <ExperienceContent />, 
     }
 ];
 
 const AboutSection = () => {
-    // FIX: Changed initial state to "skills" to match the new TAB_DATA ID
     const [tab, setTab] = useState("skills");
     const [isPending, startTransition] = useTransition();
 
@@ -179,7 +193,7 @@ const AboutSection = () => {
             <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
                 <Image src="/images/Portrait_Chicago.jpg" width={500} height={500} alt="Portrait" />
                 <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-                    {/* The About Me narrative (consider updating this text as suggested previously) */}
+                    {/* The About Me Section */}
                     <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
                     <p className="text-base lg:text-lg">
                         I&#39;m a recent Kettering University graduate with a degree in Computer Science and a minor in business.
