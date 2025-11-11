@@ -22,12 +22,12 @@ const skillGroups = [
     },
     {
         title: "Software Skills",
-        skills: ["Git", "Agile/Scrum", "Embedded Systems", "Unit and Integration Testing", "Technical Documentation", "Troubleshooting", "Debugging"],
+        skills: ["Git", "Agile/Scrum", "OpenProject", "Asana", "Embedded Systems", "Unit and Integration Testing", "Technical Documentation", "Troubleshooting", "Debugging"],
         icon: "⚙️"
     },
     {
         title: "Engineering Skills",
-        skills: ["Physical Assembly", "Soldering", "Prototyping", "3D Printing", "Interpreting Engineering Prints and Diagrams", "Fusion360", "Hardware Testing", "Statistical Analysis"],
+        skills: ["Fusion360", "Soldering", "Prototyping", "3D Printing", "Interpreting Engineering Prints and Diagrams", "Physical Assembly", "Hardware Testing", "Statistical Analysis"],
         icon: "🔧"
     },
 ];
@@ -86,50 +86,56 @@ const EducationContent = () => (
 const experienceData = [
      {
         title: "General Inspection - Software Test Engineer",
-        duration: "May 2025 - Oct. 2025",
+        duration: "May '25 - Oct. '25",
         type: "Full-Time",
         bullets: [
             "Developed and maintained embedded C++ code for high-precision industrial inspection equipment.",
-            "Designed and implemented automated software testing protocols, reducing bug report time by 40%.",
-            "Contributed to Agile planning and sprint review sessions for cross-functional project teams."
+            "Tracked software defects using Asana and collaborated with cross-functional teams to resolve issues.",
+            "Maintained software features by implementing bug fixes and enhancing existing functionality."
         ]
     },
     {
         title: "General Inspection - Application Engineer",
-        duration: "Feb. 2025 - May 2025",
+        duration: "Feb. '25 - May '25",
         type: "Full-Time",
         bullets: [
-            "Developed and maintained embedded C++ code for high-precision industrial inspection equipment.",
-            "Designed and implemented automated software testing protocols, reducing bug report time by 40%.",
-            "Contributed to Agile planning and sprint review sessions for cross-functional project teams."
+            "Wrote detailed test reports that demonstrated specialized inspection equipment to potential customers.",
+            "Trained service technicians on software operation and troubleshooting procedures.",
+            "Troubleshot and maintained Windows-based test machines.",
+            "Modified high-speed sorting machines to run sample parts for customers."
         ]
     },
     {
         title: "Inspectron Tools - Software Team Intern",
-        duration: "April 2022 - June 2024",
+        duration: "Apr. '22 - Jun. '24",
         type: "Internship",
         bullets: [
-            "Developed and maintained embedded C++ code for high-precision industrial inspection equipment.",
-            "Designed and implemented automated software testing protocols, reducing bug report time by 40%.",
-            "Contributed to Agile planning and sprint review sessions for cross-functional project teams."
+            "Performed software audits on early pre-production software releases.",
+            "Carried out hardware tests such as Chemical Resistance, Battery Life-Span, and Power Cycling tests.",
+            "Implemented code fixes for several user interface-related issues.",
+            "Tested manufacturer samples, providing data-driven reports that impacted final production decisions."
         ]
     },
     {
         title: "JMC Industries - Controls Team Intern",
-        duration: "October - December 2021",
+        duration: "Oct. - Dec. '21",
         type: "Internship",
         bullets: [
-            "Assisted in wiring and programming PLCs (Programmable Logic Controllers) for custom automation solutions.",
-            "Created HMI (Human-Machine Interface) systems for facility controls.",
+            "Contributed to the development of a company database for tracking parts and job orders.",
+            "Physically assembled machine components based on engineering diagrams and specifications.",
+            "Shadowed electrical engineers and learned how to wire high-voltage control boxes.",
+            "Oversaw the operation of completed machines and troubleshot hardware issues in the field."
         ]
     },
     {
         title: "Kettering University - IGVC Project",
-        duration: "October - December 2020",
+        duration: "Oct. - Dec. '20",
         type: "Internship",
         bullets: [
-            "Collaborated on a team to develop navigation software for an autonomous ground vehicle competition (IGVC).",
-            "Programmed sensor fusion algorithms in Python for accurate pathfinding."
+            "Collaborated on a team to document navigation software for an autonomous ground vehicle competition (IGVC).",
+            "Troubleshot specific software issues and provided technical support.",
+            "Bought and assembled hardware components for new development PCs.",
+            "Used mySQL to set up a Moodle server for project training and documentation."
         ]
     }
 ];
@@ -138,9 +144,9 @@ const ExperienceContent = () => (
     <div className="space-y-4">
         {experienceData.map((job, index) => (
             <details key={index} className="p-4 rounded-lg bg-[#181818] border border-gray-700 hover:border-yellow-500 transition-colors duration-300">
-                <summary className="font-semibold text-white cursor-pointer hover:text-yellow-500 transition-colors duration-300 flex justify-between items-center w-full pr-4">
+                <summary className="font-semibold text-white cursor-pointer hover:text-yellow-500 transition-colors duration-300 flex justify-between items-center w-full">
                     {/* Job Title */}
-                    <span className="flex-grow whitespace-nowrap overflow-hidden text-ellipsis">{job.title}</span> 
+                    <span className="flex-grow whitespace-nowrap overflow-hidden text-ellipsis text-sm md:text-xs sm:text-xs">{job.title}</span> 
                     
                     {/* Duration */}
                     <span className="text-xs text-gray-400 ml-4 flex-shrink-0 text-right">
@@ -190,16 +196,16 @@ const AboutSection = () => {
 
     return (
         <section className="text-white" id="about">
-            <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-                <Image src="/images/Portrait_Chicago.jpg" width={500} height={500} alt="Portrait" />
+            <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-6 xl:gap-16 sm:py-12 xl:px-16">
+                <Image src="/images/Portrait_Chicago.jpg" width={500} height={500} alt="Portrait" className = "sm:max-h-96 w-full object-cover rounded-lg" />
                 <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                     {/* The About Me Section */}
                     <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
                     <p className="text-base lg:text-lg">
-                        I&#39;m a recent Kettering University graduate with a degree in Computer Science and a minor in business.
-                        I&#39;m a detail-oriented worker, a creative thinker, and experienced in managing small teams and projects.
-                        I have over 3 years of industry experience in embedded programming, software testing, and systems design.
-                        Additionally, I have personal and academic experience in game design, level design, environmental modelling, and systems programming.
+                        I&#39;m a recent Kettering University Computer Science with a minor in business, offering a unique skillset that blends programming, testing, technical writing, and mechanical engineering skills.
+                        With over 5 years of industry experience across various internships and full-time roles, I bring practical knowledge in embedded systems, software testing, and product application engineering.
+                        I&#39;m a detail oriented worker proficient in project management tools like OpenProject and Asana, training others, and creating resources that support team productivity. 
+                        My passion for software development extends to game design and development using Unity and Unreal Engine. Lastly, I am well versed in both parametric and non-parametric 3D modeling using Fusion360 and Blender.
                     </p>
 
                     {/* Tab Buttons */}
