@@ -1,33 +1,41 @@
 import React from 'react';
-import { CodeBracketIcon, EyeIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import ProjectTag from './ProjectTag';
 
 
-const ProjectCard = ({ imgURL, title, description, gitURL, previewURL }) => {
+const ProjectCard = ({ imgURL, title, description, subtags, onExpand }) => {
     return (
-        <div>
+        <div 
+            onClick={onExpand} 
+            className="cursor-pointer group hover:shadow-xl hover:shadow-yellow-500/30 transition-shadow duration-300"
+        >
             <div
-                className="h-52 md:h-72 rounded-t-xl relative group"
+                className="h-52 md:h-72 rounded-t-xl relative group overflow-hidden"
                 style={{ background: `url(${imgURL})`, backgroundSize: "cover" }}
             >
-                <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500">
-                    <Link
-                        href={gitURL}
-                        className="h-14 w-14 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
-                    >
-                        <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white" />
-                    </Link>
-                    <Link
-                        href={previewURL}
-                        className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
-                    >
-                        <EyeIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white" />
-                    </Link>
+                {/* The overlay is now just a subtle darken effect, no clickable icons */}
+                <div className="overlay absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300">
+                    {/* 'View Details' prompt on hover */}
+                    <span className="absolute bottom-4 left-4 text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity">
+                        View Details →
+                    </span>
                 </div>
             </div>
-            <div className="text-white rounded-b-xl mt-3 bg-[#181818] py-6 px-4">
+            <div className="text-white rounded-b-xl mt-3 bg-[#181818] py-4 px-4">
                 <h5 className="font-xl font-semibold mb-2">{title}</h5>
-                <p className="text-[#ADB7BE]">{description}</p>
+                <p className="text-[#ADB7BE] mb-3">{description}</p>
+                
+                {/* Display Subtags */}
+                <div className="flex flex-wrap gap-2">
+                    {subtags.slice(0, 4).map((tag, index) => ( // Show max 4 subtags
+                        <span key={index} className="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded-lg">
+                            {tag}
+                        </span>
+                    ))}
+                    {subtags.length > 4 && (
+                        <span className="text-xs px-2 py-1 text-gray-400">+{subtags.length - 4} more</span>
+                    )}
+                </div>
             </div>
         </div>
     );
