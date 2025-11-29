@@ -10,41 +10,41 @@ import ProjectModal from './ProjectModal';
 const projectsData = [
     {
         id: 1,
+        title: "C++ Raycaster Engine",
+        description: "A Wolfenstein-style game engine developed in C++ and OpenGL.",
+        fullDescription: "The C++ Raycaster Engine is a retro 3D game engine with a simple map editor, written in C++ and OpenGL. This engine utilizes classic raycasting techniques to render 3D environments from a 2D map, allowing for real-time rendering of psuedo-3D walls, sprites, and textures. It features basic player movement, collision detection, texture mapping, AI Enemies, interactable doors, simple key puzzle mechanics, a skybox, and a map editor. The project showcases fundamental graphics programming concepts and served as a learning tool for me to understand the basics of 3D rendering and game engine architecture.",
+        image: "/images/Raycaster_Preview.png",
+        tags: ["All", "Software"],
+        subtags : ["C++", "OpenGL", "Git", "Graphics Programming", "Game Engine Development"],
+        gallery: ["/images/Raycaster_Preview.png", "/images/projects/raycaster/Ray_LevelCreator.png", "/images/projects/raycaster/Ray_TitleCard.png","/images/projects/raycaster/Ray_Corridor1.png", "/images/projects/raycaster/Ray_Key.png", "/images/projects/raycaster/Ray_Light.png", "/images/projects/raycaster/Ray_Enemy1.png", "/images/projects/raycaster/Ray_GameOver.png"],
+        gitURL: "https://github.com/cjkarinen20/CPP_Raycaster_Engine",
+        previewURL: "/",
+
+    },
+    {
+        id: 2,
         title: "Voice Of The Valley",
         description: "A narrative horror game developed for Itch.io ScreamJam 2024.",
         fullDescription: "Voice Of The Valley is a first-person narrative horror game developed for Itch.io ScreamJam 2024. Players explore an empty reservation, uncovering a chilling story as they navigate through environmental puzzles. The game emphasizes atmosphere, storytelling and exploration, creating an immersive experience that keeps players on edge.",
         image: "/images/VoiceOfTheValley.png",
         tags: ["All", "Games"],
         subtags : ["Unity", "Git", "ProBuilder", "C#", "Level Design", "Narrative Design"],
-        gallery: ["/images/Portrait_Diner", "/images/LiminalityPreview"],
+        gallery: ["/images/VoiceOfTheValley.png", "/images/projects/votv/VOTV_Bar.png", "/images/projects/votv/VOTV_CliffOverlook.png", "/images/projects/votv/VOTV_Crowbar.gif", "/images/projects/votv/VOTV_Fall.gif", "/images/projects/votv/VOTV_GunPOV.png", "/images/projects/votv/VOTV_Mine.png", "/images/projects/votv/VOTV_MineEntrance.png", "/images/projects/votv/VOTV_Tents.png"],
         gitURL: "https://github.com/cjkarinen20/ScreamJam2024",
         previewURL: "https://austen-kinney.itch.io/voiceofthevalley",
 
     },
     {
-        id: 2,
+        id: 3,
         title: "Liminality",
         description: "A liminal space inspired found footage horror game.",
         fullDescription: "Liminality is a first-person exploration horror game set in eerie, transitional spaces that evoke a sense of unease and nostalgia. Inspired by the concept of liminal spaces, the game immerses players in unsettling environments where they must navigate through abandoned buildings, empty hallways, and surreal landscapes. The gameplay focuses on exploration, environmental storytelling, and atmospheric tension, creating a unique horror experience that lingers in the mind long after playing.",
         image: "/images/LiminalityPreview.png",
         tags: ["All", "Games"],
         subtags : ["Unity", "Git", "ProBuilder", "C#", "Level Design", "Narrative Design"],
-        gallery: ["/images/Portrait_Diner", "/images/LiminalityPreview"],
+        gallery: ["/images/projects/liminality/Lim_PoolHall.png","/images/projects/liminality/Lim_DarkRoom.png", "/images/projects/liminality/Lim_FantasyPool.png", "/images/projects/liminality/Lim_ReservoirRoom.png", "/images/projects/liminality/Lim_TunnelRoom.png", "/images/projects/liminality/Lim_AsylumTunnel.png"],
         gitURL: "https://github.com/cjkarinen20/LiminalityHDRP",
         previewURL: "https://rattl3bones.itch.io/liminality",
-
-    },
-    {
-        id: 3,
-        title: "Whack-A-Bot VR",
-        description: "Scaled up version of the classic arcade game in VR.",
-        fullDescription: "Whack-A-Bot VR is an immersive virtual reality adaptation of the classic arcade game, where players use motion controllers to whack robotic targets that pop up in a vibrant, futuristic setting. The game features multiple levels with increasing difficulty, diverse robot designs, and engaging sound effects to enhance the experience. Players can enjoy solo play or compete with friends for high scores, making it a fun and energetic VR experience suitable for all ages.",
-        image: "/images/WABVR_Preview.png",
-        tags: ["All", "Games"],
-        subtags : ["Unity", "VR", "Git", "ProBuilder", "C#", "Level Design", "Gameplay Design"],
-        gallery: ["/images/Portrait_Diner", "/images/LiminalityPreview"],
-        gitURL: "https://github.com/nocteardor/cs420-bk-vrgame",
-        previewURL: "/documents/WABVR_TechincalReport.pdf",
 
     },
     {
@@ -55,49 +55,28 @@ const projectsData = [
         image: "/images/DropDeadPreview.jpg",
         tags: ["All", "Games"],
         subtags : ["Game Design", "Gameplay Design", "Art Design", "Technical Writing"],
-        gallery: ["/images/Portrait_Diner", "/images/LiminalityPreview"],
+        gallery: ["/images/DropDeadPreview.jpg", "/images/projects/dropdead/DD_ExampleGame1.jpg", "/images/projects/dropdead/DD_ExampleGame2.jpg", "/images/projects/dropdead/DD_AllPieces1.jpg", "/images/projects/dropdead/DD_BoxSpread1.jpg", "/images/projects/dropdead/DD_Minis.jpg"],
         gitURL: "/documents/DropDead_Rulebook.pdf",
         previewURL: "/documents/DropDead_SellSheet.pdf",
 
     },
-    {
+
+      {
         id: 5,
-        title: "C++ Raycaster Engine",
-        description: "A Wolfenstein-style game engine developed in C++ and OpenGL.",
-        fullDescription: "The C++ Raycaster Engine is a 3D game engine inspired by classic titles like Wolfenstein 3D, developed using C++ and OpenGL. This engine utilizes raycasting techniques to render 3D environments from a 2D map, allowing for real-time rendering of walls, sprites, and textures. It features basic player movement, collision detection, and texture mapping, providing a foundation for building first-person shooter games. The project showcases fundamental graphics programming concepts and serves as a learning tool for aspiring game developers.",
-        image: "/images/Raycaster_Preview.png",
-        tags: ["All", "Software"],
-        subtags : ["C++", "OpenGL", "Git", "Graphics Programming", "Game Engine Development"],
-        gallery: [], // Can be empty if no gallery images
-        gitURL: "https://github.com/cjkarinen20/CPP_Raycaster_Engine",
-        previewURL: "/",
+        title: "Whack-A-Bot VR",
+        description: "Scaled up version of the classic arcade game in VR.",
+        fullDescription: "Whack-A-Bot VR is an immersive virtual reality adaptation of the classic arcade game, where players use motion controllers to whack robotic targets that pop up in a vibrant, futuristic setting. The game features multiple levels with increasing difficulty, diverse robot designs, and engaging sound effects to enhance the experience. Players can enjoy solo play or compete with friends for high scores, making it a fun and energetic VR experience suitable for all ages.",
+        image: "/images/WABVR_Preview.png",
+        tags: ["All", "Games"],
+        subtags : ["Unity", "VR", "Git", "ProBuilder", "C#", "Level Design", "Gameplay Design"],
+        gallery: ["/images/WABVR_Preview.png", "/images/projects/wbvr/WBVR_Crouching.png", "/images/projects/wbvr/WBVR_FinalMainScene.png", "/images/projects/wbvr/WBVR_FinalMainScene2.png", "/images/projects/wbvr/WBVR_POVShot.png", "/images/projects/wbvr/WBVR_SceneView.png"],
+        gitURL: "https://github.com/nocteardor/cs420-bk-vrgame",
+        previewURL: "/documents/WABVR_TechincalReport.pdf",
 
     },
-    /*
-    {
-        id: 5,
-        title: "Project 5",
-        description: "This is a project description",
-        image: "/images/Placeholder5.png",
-        tags: ["All", "Software"],
-        gitURL: "/",
-        previewURL: "/",
-
-    },
-    {
-        id: 6,
-        title: "Project 6",
-        description: "This is a project description",
-        image: "/images/Placeholder6.png",
-        tags: ["All", "Software"],
-        gitURL: "/",
-        previewURL: "/",
-
-    }
-    */
 ];
 
-const ProjectsSection = () => {
+const ProjectsSection = ({ activeSkillFilter }) => {
     const [tag, setTag] = useState("All");
     const [selectedProject, setSelectedProject] = useState(null); 
     const ref = useRef(null);
@@ -111,8 +90,14 @@ const ProjectsSection = () => {
     const closeModal = () => setSelectedProject(null);
 
     const filteredProjects = projectsData.filter((project) =>
-        project.tags.includes(tag)
-    );
+    {
+        const passesMainTag = project.tags.includes(tag);
+
+        const passesSkillFilter = activeSkillFilter === "" ||
+            (project.subtags && project.subtags.includes(activeSkillFilter));
+
+        return passesMainTag && passesSkillFilter;  
+    });
 
     const cardVariants = {
         initial: { y: 50, opacity: 0 },

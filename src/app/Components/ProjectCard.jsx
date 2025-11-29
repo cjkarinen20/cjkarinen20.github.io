@@ -13,9 +13,7 @@ const ProjectCard = ({ imgURL, title, description, subtags, onExpand }) => {
                 className="h-52 md:h-72 rounded-t-xl relative group overflow-hidden"
                 style={{ background: `url(${imgURL})`, backgroundSize: "cover" }}
             >
-                {/* The overlay is now just a subtle darken effect, no clickable icons */}
                 <div className="overlay absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300">
-                    {/* 'View Details' prompt on hover */}
                     <span className="absolute bottom-4 left-4 text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity">
                         View Details →
                     </span>
