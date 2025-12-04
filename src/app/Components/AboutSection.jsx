@@ -65,13 +65,13 @@ const educationData = [
         institution: "Kettering University",
         years: "2020 - 2024",
         degree: "B.S. Computer Science, Minor in Business",
-        description: "Focused on Software Engineering principles, embedded systems, and game design."
+        description: "Focused on Software Engineering principles, embedded systems, and game design. Furthermore, I served as the President of Kettering Gamer's Society and Kettering Investment Club, while also acting as the Marketing Chair for the Kettering Radio Club. By my last term, I had made the Dean's List."
     },
     {
         institution: "Hartland High School",
         years: "2016 - 2020",
         degree: "High School Diploma",
-        description: "Achieved high honors and focused on STEM courses."
+        description: "Put a strong emphasis on college-level STEM courses and extracurricular activities. I graduated with my Varsity letter in Academics, Theater, and Men's Varsity Choir."
     }
 ];
 
