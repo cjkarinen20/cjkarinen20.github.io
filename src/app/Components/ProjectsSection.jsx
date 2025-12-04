@@ -16,7 +16,7 @@ const projectsData = [
         image: "/images/Raycaster_Preview.png",
         tags: ["All", "Software"],
         subtags : ["C++", "OpenGL", "Git", "Graphics Programming", "Game Engine Development"],
-        gallery: ["/images/Raycaster_Preview.png", "/images/projects/raycaster/Ray_LevelCreator.png", "/images/projects/raycaster/Ray_TitleCard.png","/images/projects/raycaster/Ray_Corridor1.png", "/images/projects/raycaster/Ray_Key.png", "/images/projects/raycaster/Ray_Light.png", "/images/projects/raycaster/Ray_Enemy1.png", "/images/projects/raycaster/Ray_GameOver.png"],
+        gallery: ["/images/Raycaster_Preview.png", "/images/projects/raycaster/Ray_LevelCreator.png", "/images/projects/raycaster/Ray_TitleCard.png","/images/projects/raycaster/Ray_Corridor1.png", "/images/projects/raycaster/Ray_Key.png", "/images/projects/raycaster/Ray_Light.png", "/images/projects/raycaster/Ray_GameOver.png"],
         gitURL: "https://github.com/cjkarinen20/CPP_Raycaster_Engine",
         previewURL: "/",
 
