@@ -12,7 +12,7 @@ const ProjectCard = ({ imgURL, title, description, subtags, onExpand }) => {
                        overflow-hidden flex flex-col"
         >
             <div
-                className="h-52 md:h-72 relative group rounded-t-xl"
+                className="h-52 md:h-62 relative group rounded-t-xl"
                 style={{ background: `url(${imgURL})`, backgroundSize: "cover", backgroundPosition: "center" }}
             >
                 <div className="overlay absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300">
