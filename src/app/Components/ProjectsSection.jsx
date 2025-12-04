@@ -17,9 +17,10 @@ const projectsData = [
         tags: ["All", "Software"],
         subtags : ["C++", "OpenGL", "Git", "Graphics Programming", "Game Engine Development"],
         gallery: ["/images/Raycaster_Preview.png", "/images/projects/raycaster/Ray_LevelCreator.png", "/images/projects/raycaster/Ray_TitleCard.png","/images/projects/raycaster/Ray_Corridor1.png", "/images/projects/raycaster/Ray_Key.png", "/images/projects/raycaster/Ray_Light.png", "/images/projects/raycaster/Ray_GameOver.png"],
-        gitURL: "https://github.com/cjkarinen20/CPP_Raycaster_Engine",
-        previewURL: "/",
-
+        links: [
+            {type: "github", url: "https://github.com/cjkarinen20/CPP_Raycaster_Engine"},
+        ],
+        documents:[],
     },
     {
         id: 2,
@@ -30,9 +31,13 @@ const projectsData = [
         tags: ["All", "Games"],
         subtags : ["Unity", "Git", "ProBuilder", "C#", "Level Design", "Narrative Design"],
         gallery: ["/images/VoiceOfTheValley.png", "/images/projects/votv/VOTV_Bar.png", "/images/projects/votv/VOTV_CliffOverlook.png", "/images/projects/votv/VOTV_Crowbar.gif", "/images/projects/votv/VOTV_Fall.gif", "/images/projects/votv/VOTV_GunPOV.png", "/images/projects/votv/VOTV_Mine.png", "/images/projects/votv/VOTV_MineEntrance.png", "/images/projects/votv/VOTV_Tents.png"],
-        gitURL: "https://github.com/cjkarinen20/ScreamJam2024",
-        previewURL: "https://austen-kinney.itch.io/voiceofthevalley",
-
+        links: [
+            {type: "github", url: "https://github.com/cjkarinen20/ScreamJam2024"},
+            {type: "itchio", url: "https://austen-kinney.itch.io/voiceofthevalley"},
+        ],
+        documents:[
+             { label: "Technical Design Document", url: "/documents/ScreamJam2024_TechnicalReport.pdf" }, 
+        ],
     },
     {
         id: 3,
@@ -43,9 +48,13 @@ const projectsData = [
         tags: ["All", "Games"],
         subtags : ["Unity", "Git", "ProBuilder", "C#", "Level Design", "Narrative Design"],
         gallery: ["/images/projects/liminality/Lim_PoolHall.png","/images/projects/liminality/Lim_DarkRoom.png", "/images/projects/liminality/Lim_FantasyPool.png", "/images/projects/liminality/Lim_ReservoirRoom.png", "/images/projects/liminality/Lim_TunnelRoom.png", "/images/projects/liminality/Lim_AsylumTunnel.png"],
-        gitURL: "https://github.com/cjkarinen20/LiminalityHDRP",
-        previewURL: "https://rattl3bones.itch.io/liminality",
-
+        links: [
+            {type: "github", url: "https://github.com/cjkarinen20/LiminalityHDRP"},
+            {type: "itchio", url: "https://rattl3bones.itch.io/liminality"},
+        ],
+        documents:[
+            { label: "Technical Design Document", url: "/documents/CS-485_FinalTechnicalReport_Karinen.pdf"}, 
+        ],
     },
     {
         id: 4,
@@ -56,12 +65,13 @@ const projectsData = [
         tags: ["All", "Games"],
         subtags : ["Game Design", "Gameplay Design", "Art Design", "Technical Writing"],
         gallery: ["/images/DropDeadPreview.jpg", "/images/projects/dropdead/DD_ExampleGame1.jpg", "/images/projects/dropdead/DD_ExampleGame2.jpg", "/images/projects/dropdead/DD_AllPieces1.jpg", "/images/projects/dropdead/DD_BoxSpread1.jpg", "/images/projects/dropdead/DD_Minis.jpg"],
-        gitURL: "/documents/DropDead_Rulebook.pdf",
-        previewURL: "/documents/DropDead_SellSheet.pdf",
-
+        links: [],
+        documents: [
+            { label: "Official RuleBook", url: "/documents/DropDead_Rulebook.pdf" }, 
+            { label: "Sell Sheet", url: "/documents/DropDead_SellSheet.pdf" },
+        ],
     },
-
-      {
+    {
         id: 5,
         title: "Whack-A-Bot VR",
         description: "Scaled up version of the classic arcade game in VR.",
@@ -70,9 +80,11 @@ const projectsData = [
         tags: ["All", "Games"],
         subtags : ["Unity", "VR", "Git", "ProBuilder", "C#", "Level Design", "Gameplay Design"],
         gallery: ["/images/WABVR_Preview.png", "/images/projects/wbvr/WBVR_Crouching.png", "/images/projects/wbvr/WBVR_FinalMainScene.png", "/images/projects/wbvr/WBVR_FinalMainScene2.png", "/images/projects/wbvr/WBVR_POVShot.png", "/images/projects/wbvr/WBVR_SceneView.png"],
-        gitURL: "https://github.com/nocteardor/cs420-bk-vrgame",
-        previewURL: "/documents/WABVR_TechincalReport.pdf",
-
+        links: [
+            {type: "github", url: "https://github.com/nocteardor/cs420-bk-vrgame"},
+        ],
+        documents: [
+            { label: "Technical Report", url: "/documents/WABVR_TechincalReport.pdf" }],
     },
 ];
 
